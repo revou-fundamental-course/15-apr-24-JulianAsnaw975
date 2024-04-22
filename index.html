@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Temperature Converter by Julian Asna Wijaya</title>
+    <script src="./jss/script.js"></script>
 </head>
 <body>
     <main>
@@ -24,10 +25,10 @@
         </header>
 
         <article>
-            <textarea rows="1"></textarea>
+            <input id="celcius" rows="1" type="number">
 
             <div class="container-button">
-                <button id="button-convert">Convert</button>
+                <button onclick="converter()" id="button-convert">Convert</button>
                 <button id="button-reset">Reset</button>
                 <button id="button-reverse">Reverse</button>
             </div>
@@ -40,9 +41,7 @@
         </header>
 
         <article>
-            <textarea rows="1"></textarea>
-
-          
+            <input rows="1" type="number">
         </article>
     </section>
 
@@ -52,7 +51,7 @@
         </header>
 
         <article>
-            <textarea rows="1"></textarea>
+            <input rows="1" type="number">
         </article>
     </section>
 
