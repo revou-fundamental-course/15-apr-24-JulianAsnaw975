@@ -45,6 +45,12 @@ textarea {
 
 .formula-s{
     font-size: 20px;
+    font-style: normal;
+}
+
+.formula-i{
+    display: inline;
+    font-size: 20px;
     font-style: italic;
 }
 
