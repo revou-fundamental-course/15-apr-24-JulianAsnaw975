@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Temperature Converter by Julian Asna Wijaya</title>
-    <script src="./jss/script.js"></script>
 </head>
 <body>
     <main>
@@ -27,31 +26,31 @@
         <article>
             <input id="celcius" rows="1" type="number">
 
-            <div class="container-button">
-                <button onclick="converter()" id="button-convert">Convert</button>
-                <button id="button-reset">Reset</button>
-                <button id="button-reverse">Reverse</button>
-            </div>
         </article>
     </section>
-
+    
     <section class="section-fahrenheit">
         <header>
             <h3>Fahrenheit (&deg;F)</h3>
         </header>
-
+        
         <article>
-            <input rows="1" type="number">
+            <input id="fahrenheit" rows="1" type="number">
         </article>
     </section>
-
+    
     <section class="section-result">
         <header>
             <h3>Cara Kalkulasi</h3>
         </header>
-
+        
         <article>
-            <input rows="1" type="number">
+            <input id="kalkulasi" rows="1" type="text">
+            <div class="container-button">
+                <button id="button-convert">Convert</button>
+                <button id="button-reset">Reset</button>
+                <button id="button-reverse">Reverse</button>
+            </div>
         </article>
     </section>
 
@@ -61,10 +60,11 @@
         </header>
         <hr>
         <article>
-            <h1 class="formula-s"><p class="formula-i">S</p><sub>(&deg;F)</sub> = (<p class="formula-i">S</p><sub>(&deg;F)</sub> <sup>x</sup> 1.8) + 32</h1>
+            <h1 class="formula-s"><p class="formula-i">S</p><sub>(&deg;F)</sub> = (<p class="formula-i">S</p><sub>(&deg;F)</sub> x 1.8) + 32</h1>
         </article>
     </section>
     </section>
     </main>
+    <script src="./jss/script.js"></script>
 </body>
 </html>
