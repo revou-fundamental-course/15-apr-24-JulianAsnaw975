@@ -84,26 +84,29 @@ button {
     font-family: arial;
 }
 
-#button-convert {
+#button-convert1 {
     background-color: forestgreen;
     color: white;
     margin-right: 8px;
 }
 
-#button-convert:hover {
+#button-convert1:hover {
     background-color: rgb(91, 116, 67);
     color: black;
     transition: 0.10s ease-in-out;
     transition-delay: 0.4;
 }
 
-#button-reset {
+#button-convert2 {
     background-color: rgb(206, 39, 1);
     color: white;
     margin-right: 8px;
 }
 
-#button-reverse {
+#button-reset {
+    display: flex;
+    position: relative;
     background-color: palevioletred;
     color: white;
+   margin-right: 8px;
 }
