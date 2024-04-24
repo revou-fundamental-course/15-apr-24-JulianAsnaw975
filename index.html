@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/suhu.png"/>
     <title>Temperature Converter by Julian Asna Wijaya</title>
 </head>
 <body>
@@ -15,7 +16,13 @@
     <!-- Section Introduction -->
     <section class="main-section">
     <section>
-        <p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</p>
+        <header>
+            <h3>Panduan Penggunaan</h3>
+        </header>
+        <hr>
+        <p class="panduan"><p class="panduan">1.</p> Masukkan suhu derajat Celcius (&deg;C) ke kotak pertama lalu klik tombol <p style="display: inline; background-color: #5A8BC6; color: white; border-radius: 4px; margin: auto; padding: 2px;"> convert</p> yang berwarna hijau untuk mendapatkan hasil konversi dalam bentuk <p style="display: inline; position: relative; left: 20px;">Fahrenheit (&deg;F)</p></p>
+        <p class="panduan"><p class="panduan">2.</p> Masukkan suhu derajat Fahrenheit (&deg;F) ke kotak kedua lalu klik tombol <p style="display: inline; background-color: #25D366; color: white; border-radius: 4px; margin: auto; padding: 2px;"> convert</p> yang berwarna merah untuk mendapatkan hasil konversi dalam bentuk <p style="display: inline; position: relative; left: 20px;">Celcius (&deg;C)</p></p>
+        <p><p class="panduan">3. Dan jika ingin menghapus semua angka yang ada di dalam kotak maka klik tombol   <p style="display: inline-flex; position: relative; left: 4px; background-color: #E71301; color: white; border-radius: 4px; margin-right: auto; padding: 2px;">reset</p>  <p style="display: inline-flex; position: relative; left: 4px;">untuk menghapus semua angka</p></p></p>
     </section>
 
     <section class="section-celcius">
@@ -52,20 +59,34 @@
         </header>
         
         <article>
-            <input id="kalkulasi" rows="1" type="text">
+            <input readonly id="kalkulasi" rows="1" type="text">
             <div class="container-button">
                 <button id="button-reset">Reset</button>
             </div>
         </article>
     </section>
 
-    <section class="section-explanation">
+    <section class="section-explanation-celcius">
         <header>
-            <h3>Cara Konversi dari (&deg;C) ke (&deg;F) </h3>
+            <h3>Cara Konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F) </h3>
         </header>
         <hr>
         <article>
-            <h1 class="formula-s"><p class="formula-i">S</p><sub>(&deg;F)</sub> = (<p class="formula-i">S</p><sub>(&deg;F)</sub> x 1.8) + 32</h1>
+            <p>Suhu <i>S</i> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <i>S</i> dalam derajat Celcius (&deg;C) kali 1.8 tambah 32.</p>
+            <h1 class="formula-s"><i>S</i><sub>(&deg;F)</sub> = (<i>S</i><sub>(&deg;C)</sub> x 1.8) + 32</h1>
+            <p style="display: inline-flex; position: relative; left: 90px; font-size: 15px;"> atau </p>
+            <h1 class="formula-s"><i>S</i><sub>(&deg;F)</sub> = (<i>S</i><sub>(&deg;C)</sub> x 9/5) + 32</h1>
+        </article>
+    </section>
+
+    <section class="section-explanation-fahrenheit">
+        <header>
+            <h3>Cara Konversi dari Fahrenheit (&deg;F) ke Celcius (&deg;C)</h3>
+        </header>
+        <hr>
+        <article>
+            <p>Suhu <i>S</i> dalam derajat Celcius (&deg;C) sama dengan suhu <i>S</i> dalam derajat Fahrenheit (&deg;F) kurang 32 kali 5 bagi 9.</p>
+            <h1 class="formula-s"><i>S</i><sub>(&deg;C)</sub> = (<i>S</i><sub>(&deg;F)</sub> - 32) * 5/9</h1>
         </article>
     </section>
     </section>
@@ -73,5 +94,3 @@
     <script src="./jss/script.js"></script>
 </body>
 </html>
-
-<!-- untuk memanggil deg -->

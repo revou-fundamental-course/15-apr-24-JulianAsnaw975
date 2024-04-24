@@ -1,10 +1,11 @@
 /* Ini File CSS */
 * , body {
     font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
 }
 
 body {
-    background-color:bisque;
+    background-color:#333A73;
 }
 
 main {
@@ -20,8 +21,12 @@ main {
 
 .main-section {
     padding: 16px;
-    background-color: aliceblue;
+    background-color: #50727B;
     border-radius: 20px;
+}
+
+.panduan {
+    display:inline-block;
 }
 
 .section-celcius {
@@ -36,13 +41,20 @@ main {
     padding-top: 16px;
 }
 
-.section-explanation {
+.section-explanation-celcius {
+    padding-top: 16px;
+}
+
+.section-explanation-fahrenheit {
     padding-top: 16px;
 }
 
 input {
-    border: 2px solid lavender;
+    border: 2px solid #FAFAFA;
+    outline: none;
+    border-color: #FAFAFA;
     border-radius: 4px;
+    background-color: #FAFAFA;
     color: coral;
     width: 100%;
     height: 32px;
@@ -58,17 +70,17 @@ input[type=number]::-webkit-inner-spin-button,
     
 
 .formula-s{
+    font-family: 'Gill Sans';
     font-size: 20px;
     font-style: normal;
 }
 
-.formula-i{
-    display: inline;
-    font-size: 20px;
-    font-style: italic;
+.formula-s>i{
+    font-family: 'Gill Sans';
 }
 
 .formula-s>sub {
+    font-family: 'Gill Sans';
     font-style: normal;
 }
 
@@ -85,28 +97,42 @@ button {
 }
 
 #button-convert1 {
-    background-color: forestgreen;
+    background-color: #5A8BC6;
     color: white;
     margin-right: 8px;
 }
 
 #button-convert1:hover {
-    background-color: rgb(91, 116, 67);
-    color: black;
-    transition: 0.10s ease-in-out;
-    transition-delay: 0.4;
+    background-color: #457BBC;
+    color: #000000;
+    transition: 0.5s ease-in-out 0.5s;
+    transition-delay: 0.3s;
 }
 
 #button-convert2 {
-    background-color: rgb(206, 39, 1);
+    background-color: #25D366;
     color: white;
+}
+
+#button-convert2:hover {
+    background-color: #4DCD35;
+    color: #000000;
     margin-right: 8px;
+    transition: 0.5s ease-in-out 0.5s;
+    transition-delay: 0.3s;
 }
 
 #button-reset {
-    display: flex;
-    position: relative;
-    background-color: palevioletred;
+    background-color: #E71301;
     color: white;
-   margin-right: 8px;
+    margin-right: 8px;
+    padding-right: 19px;
+    padding-inline: 12px;
+}
+
+#button-reset:hover {
+    background-color: #A3180C;
+    color: #000000;
+    transition: 0.5s ease-in-out 0.5s;
+    transition-delay: 0.3s;
 }
