@@ -20,9 +20,45 @@
             <h3>Panduan Penggunaan</h3>
         </header>
         <hr>
-        <p class="panduan"><p class="panduan">1.</p> Masukkan suhu derajat Celcius (&deg;C) ke kotak pertama lalu klik tombol <p style="display: inline; background-color: #5A8BC6; color: white; border-radius: 4px; margin: auto; padding: 2px;"> convert</p> yang berwarna hijau untuk mendapatkan hasil konversi dalam bentuk <p style="display: inline; position: relative; left: 20px;">Fahrenheit (&deg;F)</p></p>
-        <p class="panduan"><p class="panduan">2.</p> Masukkan suhu derajat Fahrenheit (&deg;F) ke kotak kedua lalu klik tombol <p style="display: inline; background-color: #25D366; color: white; border-radius: 4px; margin: auto; padding: 2px;"> convert</p> yang berwarna merah untuk mendapatkan hasil konversi dalam bentuk <p style="display: inline; position: relative; left: 20px;">Celcius (&deg;C)</p></p>
-        <p><p class="panduan">3. Dan jika ingin menghapus semua angka yang ada di dalam kotak maka klik tombol   <p style="display: inline-flex; position: relative; left: 4px; background-color: #E71301; color: white; border-radius: 4px; margin-right: auto; padding: 2px;">reset</p>  <p style="display: inline-flex; position: relative; left: 4px;">untuk menghapus semua angka</p></p></p>
+        <p class="panduan"><p class="panduan">1.</p> Masukkan angka suhu derajat ke dalam kotak pertama dibawah lalu klik tombol <p style="display: inline; background-color: #25D366; color: white; border-radius: 4px; margin: auto; padding: 2px;"> convert</p> untuk mendapatkan hasil konversi ke Celcius (&deg;C) ataupun Fahrenheit (&deg;F)</p></p>
+        <p><p class="panduan">2. Jika ingin menghapus semua angka yang ada di dalam kotak Celcius (&deg;C), Fahrenheit (&deg;F) dan kotak rumus kalkulasi maka klik tombol<p style="display: inline; background-color: #E71301; color: white; border-radius: 4px; margin-left: 3px; padding: 2px;">reset</p>  untuk menghapus semua angka</p></p>
+        <p class="panduan"><p class="panduan">3.</p> Dan jika ingin memutar balikkan konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F) atau Fahrenheit (&deg;F) ke Celcius (&deg;C) maka klik tombol <p style="display: inline; background-color: #5A8BC6; color: white; border-radius: 4px; margin: auto; padding: 2px;"> reverse</p> untuk memutarbalikkan konversi suhu</p></p>
+    </section>
+    
+    <div id="c-to-f">
+    <section class="section-celcius">
+        <header>
+            <h3>Celcius (&deg;C)</h3>
+        </header>
+
+        <article>
+            <input id="c-to-f-input" rows="1" type="number">
+            <span id="entering"></span>
+        </article>
+    </section>
+
+    <section class="section-fahrenheit">
+        <header>
+            <h3>Fahrenheit (&deg;F)</h3>
+        </header>
+        
+        <article>
+            <input readonly id="f-to-c-read" rows="1" type="number">
+        </article>
+    </section>
+    </div>
+    
+   
+
+    <div id="f-to-c">
+    <section class="section-fahrenheit">
+        <header>
+            <h3>Fahrenheit (&deg;F)</h3>
+        </header>
+        
+        <article>
+            <input id="f-to-c-input" rows="1" type="number">
+            <span id="validate"></span>
     </section>
 
     <section class="section-celcius">
@@ -31,27 +67,10 @@
         </header>
 
         <article>
-            <input id="celcius" rows="1" type="number">
-
-            <div class="container-button">
-                <button id="button-convert1">Convert</button>
-            </div>
+            <input readonly id="c-to-f-read" rows="1" type="number">
         </article>
     </section>
-    
-    <section class="section-fahrenheit">
-        <header>
-            <h3>Fahrenheit (&deg;F)</h3>
-        </header>
-        
-        <article>
-            <input id="fahrenheit" rows="1" type="number">
-
-            <div class="container-button">
-                <button id="button-convert2">Convert</button>
-            </div>
-        </article>
-    </section>
+    </div>
     
     <section class="section-result">
         <header>
@@ -60,8 +79,21 @@
         
         <article>
             <input readonly id="kalkulasi" rows="1" type="text">
-            <div class="container-button">
-                <button id="button-reset">Reset</button>
+
+            <div id="button-fahre">
+                <div class="container-button">
+                    <button id="button-f">Convert</button>
+                    <button id="button-resetC">Reset</button>
+                    <button id="button-reverse" onclick="reverse()">Reverse</button>
+                </div>
+            </div>
+
+            <div id="button-celci">
+                <div class="container-button">
+                    <button id="button-c">Convert</button>
+                    <button id="button-resetF">Reset</button>
+                    <button id="button-reverse" onclick="reverse()">Reverse</button>
+                </div>
             </div>
         </article>
     </section>
