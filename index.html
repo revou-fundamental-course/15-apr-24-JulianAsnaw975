@@ -25,6 +25,7 @@
         <p class="panduan"><p class="panduan">3.</p> Dan jika ingin memutar balikkan konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F) atau Fahrenheit (&deg;F) ke Celcius (&deg;C) maka klik tombol <p style="display: inline; background-color: #5A8BC6; color: white; border-radius: 4px; margin: auto; padding: 2px;"> reverse</p> untuk memutarbalikkan konversi suhu</p></p>
     </section>
     
+    <!-- Container Reverse °C ke °F -->
     <div id="c-to-f">
     <section class="section-celcius">
         <header>
@@ -36,7 +37,6 @@
             <span id="entering"></span>
         </article>
     </section>
-
     <section class="section-fahrenheit">
         <header>
             <h3>Fahrenheit (&deg;F)</h3>
@@ -48,8 +48,7 @@
     </section>
     </div>
     
-   
-
+    <!-- Container Reverse °F ke °C -->
     <div id="f-to-c">
     <section class="section-fahrenheit">
         <header>
@@ -72,32 +71,37 @@
     </section>
     </div>
     
+    <!-- Section Formula Result-->
     <section class="section-result">
         <header>
             <h3>Cara Kalkulasi</h3>
         </header>
         
         <article>
+            <!-- Formula Result -->
             <input readonly id="kalkulasi" rows="1" type="text">
-
+            
+            <!-- Container Button Reverse °C to °F -->
             <div id="button-fahre">
                 <div class="container-button">
                     <button id="button-f">Convert</button>
-                    <button id="button-resetC">Reset</button>
+                    <button id="button-reset-c">Reset</button>
                     <button id="button-reverse" onclick="reverse()">Reverse</button>
                 </div>
             </div>
 
+            <!-- Container Button Reverse °F to °C -->
             <div id="button-celci">
                 <div class="container-button">
                     <button id="button-c">Convert</button>
-                    <button id="button-resetF">Reset</button>
+                    <button id="button-reset-f">Reset</button>
                     <button id="button-reverse" onclick="reverse()">Reverse</button>
                 </div>
             </div>
         </article>
     </section>
 
+    <!-- Section Explanation Celcius -->
     <section class="section-explanation-celcius">
         <header>
             <h3>Cara Konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F) </h3>
@@ -111,6 +115,7 @@
         </article>
     </section>
 
+    <!-- Section Explanation Fahrenheit -->
     <section class="section-explanation-fahrenheit">
         <header>
             <h3>Cara Konversi dari Fahrenheit (&deg;F) ke Celcius (&deg;C)</h3>

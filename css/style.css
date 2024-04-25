@@ -15,6 +15,34 @@ main {
     padding-bottom: 64px;
 }
 
+input {
+    border: 2px solid #FAFAFA;
+    outline: none;
+    border-color: #FAFAFA;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+    color: coral;
+    width: 99.2%;
+    height: 32px;
+    font-size: 16px;
+    resize: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+button {
+    border: none;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: arial;
+}
+
+
 .main-title {
     text-align: center;
 }
@@ -48,27 +76,7 @@ main {
 .section-explanation-fahrenheit {
     padding-top: 16px;
 }
-
-input {
-    border: 2px solid #FAFAFA;
-    outline: none;
-    border-color: #FAFAFA;
-    border-radius: 4px;
-    background-color: #FAFAFA;
-    color: coral;
-    width: 99.2%;
-    height: 32px;
-    font-size: 16px;
-    resize: none;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
     
-
 .formula-s{
     font-family: 'Gill Sans';
     font-size: 20px;
@@ -87,14 +95,6 @@ input[type=number]::-webkit-inner-spin-button,
 .container-button {
     padding-top: 8px;
     margin-top: 6px;
-}
-
-button {
-    border: none;
-    font-size: 14px;
-    padding: 8px;
-    border-radius: 4px;
-    font-family: arial;
 }
 
 #button-f {
@@ -123,7 +123,7 @@ button {
     transition-delay: 0.3s;
 }
 
-#button-resetC {
+#button-reset-c {
     background-color: #E71301;
     color: white;
     margin-right: 8px;
@@ -132,7 +132,7 @@ button {
     padding-top: 8px;
 }
 
-#button-resetC:hover {
+#button-reset-c:hover {
     background-color: #A3180C;
     color: #000000;
     transition: 0.5s ease-in-out 0.5s;
@@ -140,7 +140,7 @@ button {
 }
 
 
-#button-resetF {
+#button-reset-f {
     background-color: #E71301;
     color: white;
     margin-right: 8px;
@@ -149,7 +149,7 @@ button {
     padding-top: 8px;
 }
 
-#button-resetF:hover {
+#button-reset-f:hover {
     background-color: #A3180C;
     color: #000000;
     transition: 0.5s ease-in-out 0.5s;
